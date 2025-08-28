@@ -1,6 +1,9 @@
 <script setup lang="ts">
 import { Button } from "~/components/ui/button";
 import { logoutAction } from "~/lib/actions";
+import { authStore } from "~/stores/auth.store";
+
+const auth = authStore();
 
 const handleLogout = async () => {
   try {
@@ -24,6 +27,7 @@ const handleLogout = async () => {
             <h1 class="text-xl font-semibold text-gray-900">Dashboard</h1>
           </div>
           <div class="flex items-center space-x-4">
+            <span class="text-sm text-gray-700">{{ auth.user?.name }}</span>
             <Button variant="outline" size="sm" @click="handleLogout">
               Logout
             </Button>
