@@ -1,75 +1,59 @@
-# Nuxt Minimal Starter
+# Nuxt Demo App
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A modern Nuxt 4 application with TypeScript, Tailwind CSS, and authentication features.
 
-## Setup
+## Installation
 
-Make sure to install dependencies:
+1. Clone the repository:
 
 ```bash
-# npm
-npm install
+git clone <repository-url>
+cd nuxt-demo
+```
 
-# pnpm
-pnpm install
+2. Install dependencies using Bun:
 
-# yarn
-yarn install
-
-# bun
+```bash
 bun install
 ```
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
+3. Copy environment variables (if needed):
 
 ```bash
-# npm
-npm run dev
+cp .env.example .env
+```
 
-# pnpm
-pnpm dev
+The `NUXT_PUBLIC_API_URL` is the URL of the LaravelAPI.
 
-# yarn
-yarn dev
+## Development
 
-# bun
+Start the development server:
+
+```bash
 bun run dev
 ```
 
-## Production
+The application will be available at `http://localhost:3000`
 
-Build the application for production:
+## Build
+
+Generate static site:
 
 ```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
+bun run generate
 ```
 
-Locally preview production build:
+Preview the generated site:
 
 ```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
 bun run preview
 ```
 
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Tech Stack
+
+- **Nuxt 4** - Vue.js framework
+- **TypeScript** - Type safety
+- **Tailwind CSS** - Styling
+- **Pinia** - State management
+- **shadcn-nuxt** - UI components
+- **Axios** - HTTP client
