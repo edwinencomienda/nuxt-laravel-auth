@@ -1,6 +1,6 @@
-# Nuxt Demo App
+# Nuxt with authentication and Laravel API
 
-A modern Nuxt 4 application with TypeScript, Tailwind CSS, and authentication features.
+A modern Nuxt 4 application with TypeScript, Tailwind CSS, and authentication features. It uses Laravel API for authentication and authorization.
 
 ## Installation
 
