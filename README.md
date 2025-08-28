@@ -57,3 +57,5 @@ bun run preview
 - **Pinia** - State management
 - **shadcn-nuxt** - UI components
 - **Axios** - HTTP client
+
+For the backend please refer to the [Laravel API](https://github.com/edwinencomienda/laravel-auth-sanctum-api) repository.
