@@ -23,7 +23,7 @@ bun install
 cp .env.example .env
 ```
 
-The `NUXT_PUBLIC_API_URL` is the URL of the LaravelAPI.
+The `NUXT_PUBLIC_API_URL` is the URL of the LaravelAPI. Make sure the backend host is same as the frontend host. For example frontend is running on `http://localhost:3000` and backend is running on `http://localhost:8000` then the `NUXT_PUBLIC_API_URL` should be `http://localhost:8000`.
 
 ## Development
 
