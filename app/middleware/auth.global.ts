@@ -4,6 +4,10 @@ import { isAuthenticated } from "~/lib/utils";
 export default defineNuxtRouteMiddleware(async (to, from) => {
   const store = authStore();
 
+  if (to.path === "/") {
+    return navigateTo("/dashboard");
+  }
+
   if (!store.user && isAuthenticated()) {
     try {
       await getUserAction();
